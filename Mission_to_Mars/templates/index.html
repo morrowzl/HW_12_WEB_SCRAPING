@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mars title</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
-
 <body>
   <div class="container-fluid">
     <div class="jumbotron text-center">
@@ -16,12 +17,66 @@
       <p>descriptive text</p>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Go to Mars</a></p>
     </div>
-    <img src="{{ vacation.sloth_img }}" alt="Sloth">
+    <img src="{{ mars.high_res_url }}" alt="Featured Mars Image" class="thumbnail" title="Featured Mars Image">
     <h2>The weather on Mars is:</h2>
-    <h3>Max Temp: {{ vacation.max_temp }}</h3>
-    <h3>Min Temp: {{ vacation.min_temp }}</h3>
+    <h2>{{ mars.latest_news_title }}</h2>
+    <h2>{{ mars.mars_weather }}</h2>
+    <h2>Mars Facts Table</h2>
+    <div class="fact_table_div">
+      <!-- <iframe class="fact_table_iframe" src="table.html" alt="table test" title="table test"></iframe> -->
+      <table border="1" class="dataframe">
+        <tbody>
+          <tr>
+            <td>Equatorial Diameter:</td>
+            <td>6,792 km</td>
+          </tr>
+          <tr>
+            <td>Polar Diameter:</td>
+            <td>6,752 km</td>
+          </tr>
+          <tr>
+            <td>Mass:</td>
+            <td>6.39 � 10^23 kg (0.11 Earths)</td>
+          </tr>
+          <tr>
+            <td>Moons:</td>
+            <td>2 (Phobos &amp; Deimos)</td>
+          </tr>
+          <tr>
+            <td>Orbit Distance:</td>
+            <td>227,943,824 km (1.38 AU)</td>
+          </tr>
+          <tr>
+            <td>Orbit Period:</td>
+            <td>687 days (1.9 years)</td>
+          </tr>
+          <tr>
+            <td>Surface Temperature:</td>
+            <td>-87 to -5 �C</td>
+          </tr>
+          <tr>
+            <td>First Record:</td>
+            <td>2nd millennium BC</td>
+          </tr>
+          <tr>
+            <td>Recorded By:</td>
+            <td>Egyptian astronomers</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+	  <h2>Mars Hemispheres</h2>
+    <h3>{{ mars.valles_title }}</h3>
+    <img src="{{ mars.valles_img_url }}" alt="{{ mars.valles_title }}" class="thumbnail" title="Image of {{ mars.valles_title }}">
+    <h3>{{ mars.cerberus_title }}</h3>
+    <img src="{{ mars.cerberus_img_url }}" alt="{{ mars.cerberus_title }}" class="thumbnail" title="Image of {{ mars.cerberus_title }}">
+    <h3>{{ mars.schia_title }}</h3>
+    <img src="{{ mars.schia_img_url }}" alt="{{ mars.schia_title }}" class="thumbnail" title="Image of {{ mars.schia_title }}">
+    <h3>{{ mars.syrt_title }}</h3>
+    <img src="{{ mars.syrt_img_url }}" alt="{{ mars.syrt_title }}" class="thumbnail" title="Image of {{ mars.syrt_title }}">
   </div>
-  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
-
 </html>
