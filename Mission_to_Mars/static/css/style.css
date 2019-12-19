@@ -1,3 +1,63 @@
-h1 {
-    color: blue;
+body {
+    background-image: url("starfield-27.jpg");
+    color: black;
+}
+
+br {
+    margin-bottom: 9px;
+}
+.btn.btn-danger.btn-lg.text-white {
+    border-color: black;
+}
+
+.img {
+    max-width: 1600px;
+    max-height: 900px
+}
+
+.img.hemi_img {
+    max-width: 400px;
+    max-height: auto;
+    text-align: center;
+    vertical-align: middle
+}
+
+.img_tray {
+    text-align: center;
+    vertical-align: middle
+}
+
+.jumbotron.jumbotron-fluid.text-center {
+    background-color: #e7a991b4;
+}
+
+.jumbotron_h1 {
+    color: black ;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.jumbotron_lead {
+    font-size: 24px;
+}
+
+.section_first {
+    background-color: #e7a991b4;
+    margin-bottom: 28px;
+    margin-top: 28px;
+    padding: 12px
+}
+
+.section_second {
+    background-color: #e7a991b4;
+    margin-bottom: 28px;
+    margin-top: 28px;
+    padding: 12px
+}
+
+.section_third {
+    background-color: #e7a991b4;
+    margin-bottom: 28px;
+    margin-top: 28px;
+    padding: 12px
 }
