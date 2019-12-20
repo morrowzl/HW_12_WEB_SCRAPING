@@ -83,7 +83,7 @@
       </div>
       <div class="section_second">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col">
             <h2>Featured Mars Image</h2>
             <hr>
             <img class="img feat_img" src="{{ mars.high_res_url }}" alt="Featured Mars Image" title="Featured Mars Image">
@@ -93,31 +93,80 @@
       </div>
       <div class="section_third">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-12">
             <h2>Martian Hemispheres</h2>
             <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
             <div class="img_tray">
-            <h4>{{ mars.valles_title }}</h4>
-            <img class="img hemi_img" src="{{ mars.valles_img_url }}" alt="{{ mars.valles_title }}" title="Image of {{ mars.valles_title }}">
-            <br>
-            <h4>{{ mars.cerberus_title }}</h4>
-            <img class="img hemi_img" src="{{ mars.cerberus_img_url }}" alt="{{ mars.cerberus_title }}" title="Image of {{ mars.cerberus_title }}">
-            <br>
-            <h4>{{ mars.schia_title }}</h4>
-            <img class="img hemi_img" src="{{ mars.schia_img_url }}" alt="{{ mars.schia_title }}" title="Image of {{ mars.schia_title }}">
-            <br>
-            <h4>{{ mars.syrt_title }}</h4>
-            <img class="img hemi_img" src="{{ mars.syrt_img_url }}" alt="{{ mars.syrt_title }}" title="Image of {{ mars.syrt_title }}">
-            <br>
+              <img class="img hemi_img" src="{{ mars.valles_img_url }}" alt="{{ mars.valles_title }}" title="Image of {{ mars.valles_title }}">
+              <p class="caption">{{ mars.valles_title }}</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="img_tray">             
+              <img class="img hemi_img" src="{{ mars.cerberus_img_url }}" alt="{{ mars.cerberus_title }}" title="Image of {{ mars.cerberus_title }}">
+              <p class="caption">{{ mars.cerberus_title }}</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="img_tray">
+              <img class="img hemi_img" src="{{ mars.schia_img_url }}" alt="{{ mars.schia_title }}" title="Image of {{ mars.schia_title }}">            
+            <p class="caption">{{ mars.schia_title }}</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="img_tray">
+              <img class="img hemi_img" src="{{ mars.syrt_img_url }}" alt="{{ mars.syrt_title }}" title="Image of {{ mars.syrt_title }}">
+              <p class="caption">{{ mars.syrt_title }}</p>
             </div>
           </div>
         </div>
       </div>
-    
-	  
+    </div>
+  </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
+<!-- 
+        <div class="row">
+          <div class="img_tray">
+            <div class="col-md-6">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h4>{{ mars.valles_title }}</h4>
+                </div>
+                <img class="img hemi_img" src="{{ mars.valles_img_url }}" alt="{{ mars.valles_title }}" title="Image of {{ mars.valles_title }}">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="thumbnail">
+                <div class="caption">
+                  <h4>{{ mars.cerberus_title }}</h4>
+                </div>
+                <img class="img hemi_img" src="{{ mars.cerberus_img_url }}" alt="{{ mars.cerberus_title }}" title="Image of {{ mars.cerberus_title }}">
+              </div>
+            </div>
+              <div class="col-md-6">
+                <div class="thumbnail">
+                  <div class="caption">
+                    <h4>{{ mars.schia_title }}</h4>
+                  </div>
+                  <img class="img hemi_img" src="{{ mars.schia_img_url }}" alt="{{ mars.schia_title }}" title="Image of {{ mars.schia_title }}">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="thumbnail">
+                  <div class="caption">
+                    <h4>{{ mars.syrt_title }}</h4>
+                  </div>
+                  <img class="img hemi_img" src="{{ mars.syrt_img_url }}" alt="{{ mars.syrt_title }}" title="Image of {{ mars.syrt_title }}">
+                </div>
+              </div>
+          </div>
+        </div> -->

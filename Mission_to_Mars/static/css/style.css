@@ -10,21 +10,35 @@ br {
     border-color: black;
 }
 
+.caption {
+    font-style: italic;
+}
+
 .img {
     max-width: 1600px;
     max-height: 900px
 }
 
 .img.hemi_img {
-    max-width: 400px;
+    display: inline;
+    max-width: 200px;
     max-height: auto;
+    margin: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.img_tray {
+    /* max-height: 700px; */
     text-align: center;
     vertical-align: middle
 }
 
-.img_tray {
-    text-align: center;
-    vertical-align: middle
+.img_tray:hover {
+    border-color: #b9fc00;
+    border-style: solid;
+    border-width: 3px;
+    
 }
 
 .jumbotron.jumbotron-fluid.text-center {
